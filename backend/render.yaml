@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: lookbook-smart-pricing-backend
+    env: node
+    rootDir: backend
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: ALLOWED_ORIGIN
+        sync: false
+      - key: PORT
+        value: 10000

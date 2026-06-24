@@ -1,0 +1,41 @@
+:root {
+  --canvas: #f7f1e8;
+  --ink: #2e2921;
+  --muted: #5e5649;
+  --heading: #1f1a14;
+  --card: #fcfbf8;
+  --edge: #d8d1c4;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-heading: "Space Grotesk", "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, #fff7ed 0%, var(--canvas) 100%);
+  color: var(--ink);
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--heading);
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
