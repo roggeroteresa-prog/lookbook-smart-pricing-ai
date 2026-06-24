@@ -16,6 +16,18 @@ app.use(
   })
 );
 
+app.get("/", (_req, res) => {
+  res.json({
+    service: "LookBook Smart Pricing AI Backend",
+    status: "ok",
+    endpoint: "POST /api/valuate",
+  });
+});
+
+app.get("/health", (_req, res) => {
+  res.json({ status: "ok" });
+});
+
 const outputSchema = {
   name: "lookbook_price_estimate",
   strict: true,
